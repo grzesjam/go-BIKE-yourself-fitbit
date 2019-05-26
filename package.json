@@ -1,0 +1,30 @@
+{
+  "fitbit": {
+    "appUUID": "154303ca-1ecc-41e6-a09e-405f331bc0a4",
+    "appType": "app",
+    "appDisplayName": "Go BIKE yourself",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#8bc34a",
+    "requestedPermissions": [
+      "access_internet"
+    ],
+    "buildTargets": [
+      "higgs",
+      "meson",
+      "gemini"
+    ],
+    "i18n": {
+      "en": {
+        "name": "Go BIKE yourself"
+      }
+    },
+    "defaultLanguage": "en-US"
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "^3.1.1",
+    "@fitbit/sdk-cli": "^1.6.0"
+  },
+  "scripts": {
+    "build": "fitbit-build"
+  }
+}

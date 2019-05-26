@@ -1,0 +1,45 @@
+<svg>
+  <use id="mixedtext" href="#mixed-text-center-mid" height="100%" fill="fb-yellow">
+    <set href="#header/text" attributeName="text-buffer" to="Go BIKE yourself"/>
+    <set id="InfoText" href="#copy/text" attributeName="text-buffer" to="Please wait, Talking with phone..."/>
+    <set href="#copy/text" attributeName="text-length" to="55" />
+  </use>
+  <defs>
+
+    <symbol id="my-tile-item" href="#tile-list-item" focusable="false" pointer-events="none" system-events="all" display="none">
+      <rect id="avline" x="0" y="0" width="1%" height="100%" fill="black" visibility="hidden" />
+
+      <use id="marquee" href="#marquee-text" font-size="30" y="50%-60" x="10" width="100%" height="80" fill="white" mode="1" value="50">
+        <rect width="100%" height="100%" fill="black" opacity="0" />
+        <set href="group/text" attributeName="text-buffer" to="" />
+        <set href="group/separator" attributeName="width" to="150" />
+      </use>
+      <image id="imgfree-bike" x="10" y="50%+3" width="30" height="30" href="bike.png" fill="white" />
+      <image x="90" y="50%+3" width="30" height="30" href="stand.png" />
+      <text id="free-bike" text-length="30" y="50%+30" x="45" font-size="25" />
+      <text id="free-stand" text-length="30" y="50%+30" x="120" font-size="25" />
+
+      <image id="fav" x="100%-30" y="50%" width="30" height="30" fill="white" href="hrEmpty.png" />
+      <rect id="favButt" x="80%" y="0" width="20%" height="100%" fill-opacity="0" pointer-events="visible" />
+
+      <rect id="tile-divider-bottom" class="tile-divider-bottom" />
+    </symbol>
+  </defs>
+  <use id="my-list" href="#tile-list">
+    <var id="virtual" value="1" />
+    <var id="separator-height-bottom" value="2" />
+
+    <use id="my-pool" href="#tile-list-pool">
+      <use id="my-pool[0]" href="#my-tile-item" class="tile-list-item" />
+      <use id="my-pool[1]" href="#my-tile-item" class="tile-list-item" />
+      <use id="my-pool[2]" href="#my-tile-item" class="tile-list-item" />
+      <use id="my-pool[3]" href="#my-tile-item" class="tile-list-item" />
+      <use id="my-pool[4]" href="#my-tile-item" class="tile-list-item" />
+      <use id="my-pool[5]" href="#my-tile-item" class="tile-list-item" />
+      <use id="my-pool[6]" href="#my-tile-item" class="tile-list-item" />
+      <use id="my-pool[7]" href="#my-tile-item" class="tile-list-item" />
+      <use id="my-pool[8]" href="#my-tile-item" class="tile-list-item" />
+      <use id="my-pool[9]" href="#my-tile-item" class="tile-list-item" />
+    </use>
+  </use>
+</svg>
