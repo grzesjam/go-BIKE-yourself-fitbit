@@ -1,3 +1,5 @@
 #ignore Build folder (cuz who need it?)
 build/
 package-lock.json
+node_modules/
+Screenshot*.png
